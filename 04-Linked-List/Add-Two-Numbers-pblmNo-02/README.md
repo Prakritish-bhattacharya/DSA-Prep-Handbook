@@ -186,12 +186,51 @@ Answer
 
 ---
 
-## 🚀 Interview Tips
+# 💻 Python Solution
 
-- Never convert the linked list into integers.
-- Always check for remaining carry.
-- Use a dummy node for cleaner implementation.
-- This is a classic **Linked List + Simulation** interview problem.
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+        dummy = ListNode(0)
+        curr = dummy
+        carry = 0
+
+        while l1 or l2 or carry:
+            sum = carry
+            if l1:
+                sum += l1.val
+                l1 = l1.next
+            if l2:
+                sum += l2.val
+                l2 = l2.next
+            carry = sum // 10
+            curr.next = ListNode(sum % 10)
+            curr = curr.next
+
+        return dummy.next
+
+```
+
+---
+
+## 📚 Learning Outcomes
+
+After solving this problem, you will understand:
+
+- ✅ How to simulate elementary addition using a linked list.
+- ✅ How to use a **Dummy (Sentinel) Node** to simplify linked list construction.
+- ✅ How to maintain and propagate **carry** across iterations.
+- ✅ How to traverse two linked lists simultaneously using pointers.
+- ✅ How to handle lists of different lengths without extra preprocessing.
+- ✅ How to deal with the final carry by creating an additional node when required.
+- ✅ How to build a new linked list dynamically during traversal.
+- ✅ How to write clean and interview-friendly linked list code.
+
 
 ---
 
