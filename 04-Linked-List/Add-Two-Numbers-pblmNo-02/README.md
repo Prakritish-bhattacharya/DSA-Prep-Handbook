@@ -41,7 +41,7 @@ A **dummy node** is used to simplify list creation.
 # 🖼 Dry Run
 
 
-![Dry Run](Add-Two-Number.png)
+![Dry Run](../Add-Two-Numbers-pblmNo-02/DRY-run-PNG/Add-Two-Number.png)
 
 ---
 

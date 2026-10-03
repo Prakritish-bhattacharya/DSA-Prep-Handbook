@@ -32,7 +32,7 @@ This allows the list to be rearranged in-place using **O(1)** extra space.
 # 🖼 Dry Run
 
 
-![Dry Run](dry-run.png)
+![Dry Run](../Odd-Even-Linked-List/DRY-run-PNG/dry-run.png)
 
 ---
 
